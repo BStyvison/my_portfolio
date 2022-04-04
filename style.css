@@ -129,7 +129,7 @@ nav ul li a:hover{
 }
 
 section{
-    margin-top: 50vh;
+    margin-top: 20vh;
     padding: 100px;
 }
 
@@ -143,6 +143,10 @@ section p{
 
 /*responsivite*/
 @media (max-width: 991px) {
+
+    section{
+        margin-top: 25vh;
+    }
     section, header {
         padding: 40px;
     }
