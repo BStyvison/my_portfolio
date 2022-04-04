@@ -50,6 +50,21 @@ header.sticky .banner{
     opacity: 0.5;
 }
 
+header .ancora{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    transition: 1s;
+    z-index: 1;
+}
+header .ancora img{
+    height: 40px;
+    width: auto;
+}
+
 header .logo {
     position: absolute;
     top: 50%;
