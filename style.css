@@ -59,10 +59,15 @@ header .ancora{
     height: 40px;
     transition: 1s;
     z-index: 1;
+    cursor: pointer;
 }
 header .ancora img{
     height: 40px;
     width: auto;
+}
+
+header.sticky .ancora{
+    display: none;
 }
 
 header .logo {
