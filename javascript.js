@@ -13,6 +13,7 @@ document.querySelector('.toggle').onclick = function(){
 
 //ScroolBar
 
+//Recalcula a dimensão da pagina
 window.onresize=function(){
     location.reload();
 }
@@ -48,13 +49,19 @@ function scroolToIdOnClick(event) {
     scroolToPosition (to)
 }
 
-function scroolToPosition(to) {
-    // window.scroll({
-    //     top: to,
-    //     behavior: "smooth",
-    // })
-    smoothScrollTo(0, to)
-}
+if ('scrollBehavior' in document.documentElement.style) { 
+    function scroolToPosition(to) {
+        window.scroll({
+            top: to,
+            behavior: "smooth",
+        })
+    }
+    } else {
+        function scroolToPosition(to) {
+            smoothScrollTo(0, to)
+        }
+    }
+
 
 
 /**
