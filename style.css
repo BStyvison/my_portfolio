@@ -14,6 +14,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    /* scroll-behavior: smooth; */
+}
+
 body{
     min-height: 2000px;
 }
@@ -128,29 +132,51 @@ nav ul li a:hover{
     color: var(--color1);
 }
 
-section{
-    margin-top: 20vh;
+#about{
+    height: 80vh;
+    margin-top: 68px;
     padding: 100px;
 }
 
-section h2{
+#about h2{
     font-size: 3em;
 }
 
-section p{
+#about p{
     font-size: 1.2em;
+}
+
+#services{
+    height: 90vh;
+}
+#services h2{
+    font-size: 3em;
+}
+
+#portifolio{
+    height: 90vh;
+}
+#portifolio h2{
+    font-size: 3em;
+}
+
+#contact{
+    height: 90vh;
+}
+#contact h2{
+    font-size: 3em;
 }
 
 /*responsivite*/
 @media (max-width: 991px) {
 
-    section{
+    #about{
         margin-top: 25vh;
     }
-    section, header {
+    #about, header {
         padding: 40px;
     }
-    section h2 {
+    #about h2 {
         font-size: 2em;
     }
     header.sticky .logo {
