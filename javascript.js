@@ -37,6 +37,7 @@ menuItems.forEach(item => {
 
 
 
+
 // Verificar a distância entre o alvo e o topo
 function getScroolTopByHref(element) {
     const id = element.getAttribute('href')
