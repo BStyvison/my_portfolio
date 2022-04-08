@@ -35,6 +35,8 @@ menuItems.forEach(item => {
     item.addEventListener('click', scroolToIdOnClick)
 })
 
+
+
 // Verificar a distância entre o alvo e o topo
 function getScroolTopByHref(element) {
     const id = element.getAttribute('href')
@@ -46,8 +48,13 @@ function scroolToIdOnClick(event) {
     event.preventDefault()  //Evitar o padrão
     const to = getScroolTopByHref(event.target) - 80
 
-    scroolToPosition (to)
+    if (to == '57') {
+        scroolToPosition (to + 80)
+    } else {
+        scroolToPosition (to) 
+    }
 }
+
 
 if ('scrollBehavior' in document.documentElement.style) { 
     function scroolToPosition(to) {
