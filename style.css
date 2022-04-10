@@ -132,31 +132,36 @@ nav ul li a:hover{
     color: var(--color1);
 }
 
-#about{
+#sobre{
     height: 78vh;
     margin-top: 137px;
     padding: 80px 0;
 }
 
-#about h2{
+#sobre h2{
     font-size: 3em;
 }
 
-#about p{
+#sobre p{
     font-size: 1.2em;
 }
 
-#services{
+#sobre img{
+    height: 400px;
+    width: auto;
+}
+
+#tecnologias{
     height: 90vh;
 }
-#services h2{
+#tecnologias h2{
     font-size: 3em;
 }
 
-#portifolio{
+#projetos{
     height: 90vh;
 }
-#portifolio h2{
+#projetos h2{
     font-size: 3em;
 }
 

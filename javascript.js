@@ -48,7 +48,7 @@ function getScroolTopByHref(element) {
 function scroolToIdOnClick(event) {
     event.preventDefault()  //Evitar o padrão
     const to = getScroolTopByHref(event.target) - 80
-
+    console.log(to)
     if (to == '57') {
         scroolToPosition (to + 80)
     } else {
