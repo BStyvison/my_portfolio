@@ -132,10 +132,15 @@ nav ul li a:hover{
     color: var(--color1);
 }
 
+
+
 #sobre{
-    height: 78vh;
+    height: 100vh;
     margin-top: 137px;
-    padding: 80px 0;
+    padding: 80px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sobre h2{
@@ -150,6 +155,23 @@ nav ul li a:hover{
     height: 400px;
     width: auto;
 }
+
+.description {
+    margin-left: 40px;
+}
+.description p{
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #00ffe7;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
 
 #tecnologias{
     height: 90vh;
@@ -228,7 +250,10 @@ nav ul li a:hover{
 
 
 main{
-    height: calc(100vh - 80px);
+    padding: 20px;
+    max-width: 80vw;
+    min-width: 300px;
+    margin: auto;
 }
 
 /*responsivite*/
