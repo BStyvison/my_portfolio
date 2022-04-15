@@ -132,31 +132,58 @@ nav ul li a:hover{
     color: var(--color1);
 }
 
-#about{
-    height: 78vh;
+
+
+#sobre{
+    height: 100vh;
     margin-top: 137px;
-    padding: 80px 0;
+    padding: 80px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#about h2{
+#sobre h2{
     font-size: 3em;
 }
 
-#about p{
+#sobre p{
     font-size: 1.2em;
 }
 
-#services{
+#sobre img{
+    height: 400px;
+    width: auto;
+}
+
+.description {
+    margin-left: 40px;
+}
+.description p{
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #00ffe7;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+#tecnologias{
     height: 90vh;
 }
-#services h2{
+#tecnologias h2{
     font-size: 3em;
 }
 
-#portifolio{
+#projetos{
     height: 90vh;
 }
-#portifolio h2{
+#projetos h2{
     font-size: 3em;
 }
 
@@ -223,7 +250,10 @@ nav ul li a:hover{
 
 
 main{
-    height: calc(100vh - 80px);
+    padding: 20px;
+    max-width: 80vw;
+    min-width: 300px;
+    margin: auto;
 }
 
 /*responsivite*/
