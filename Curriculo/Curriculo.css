@@ -74,7 +74,19 @@ body{
     font-weight: 300;
 }
 
-.contactInfo{
+.objetivo{
+    padding-top: 40px;
+}
+
+.objetivo p{
+    margin-top: 5px;
+    color: white;
+    font-size: 300;
+}
+
+
+
+.contactInfor{
     padding-top: 40px;
 }
 
@@ -84,6 +96,43 @@ body{
     font-weight: 600;
     letter-spacing: 1px;
 
+}
+
+.contactInfor ul{
+    position: relative;
+
+}
+
+.contactInfor ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfor ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfor ul li span{
+    color: white;
+    font-size: 300;
+}
+
+.linken{
+    display: flex;
+}
+
+.icon2{
+    margin-right: 15px;
+}
+
+.text {
+    color: white;
+    font-size: 300;
 }
 
 .container .right_side{
