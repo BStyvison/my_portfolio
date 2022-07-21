@@ -203,6 +203,32 @@ p, li{
     margin-bottom: 20px;
 }
 
-.experiencia.skills ul {
+.experiencia.skills .soft, .agil ul, .curso ul {
     margin-left: 24px;
+}
+.hard ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+.agil {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+
+@media (max-width: 600px){
+    .experiencia .box {
+        flex-direction: column ;
+    }
+    .experiencia .box .year_company{
+        margin-bottom: 5px;
+    }
 }
