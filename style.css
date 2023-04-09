@@ -34,6 +34,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     transition: 1s;
+    z-index: 99;
 }
 
 header.sticky {
@@ -134,33 +135,54 @@ nav ul li a:hover{
 
 
 
-#sobre{
-    height: 100vh;
-    margin-top: 137px;
-    padding: 80px 0 0 0;
+.about{
+    height: 107vh;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 60px;
+    gap: 60px;
+    background-color: #000000;
 }
 
-#sobre h2{
+.about h2{
     font-size: 3em;
 }
 
-#sobre p{
+.about p{
     font-size: 1.2em;
 }
 
-#sobre img{
-    height: 400px;
+.about img{
+    height: 40vw;
     width: auto;
 }
 
 .description {
-    margin-left: 40px;
+    animation: initialize .7s forwards;
+    margin-top: 120px;
+    align-self: start;
+    display: grid;
+    gap: 30px;
+    width: 40vw;
 }
-.description p{
-    margin-bottom: 30px;
+.description h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #f7f7f7;
+}
+.description p {
+    font-family: 'Poppins';
+    font-weight: 200;
+    color: #f7f7f7;
+}
+
+.typing::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink .5s infinite;
 }
 
 .btn {
@@ -169,7 +191,30 @@ nav ul li a:hover{
     padding: 6px 15px;
     border-radius: 5px;
     text-decoration: none;
+    width: 170px;
+}
 
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes initialize {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 
@@ -250,8 +295,7 @@ nav ul li a:hover{
 
 
 main{
-    padding: 20px;
-    max-width: 80vw;
+    /*background-color: #000;*/
     min-width: 300px;
     margin: auto;
 }
