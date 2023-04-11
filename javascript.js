@@ -103,3 +103,23 @@ if ('scrollBehavior' in document.documentElement.style) {
       window.scroll(newX, newY);
     }, 1000 / 60); // 60 fps
   };
+
+
+  //Title animation
+function writingLetters(){
+    function activateLetters(element){
+        const arrText = element.innerText.split('');
+        element.innerText = '';
+        arrText.forEach((letter, i)=>{
+            setTimeout(()=>{
+                element.innerHTML += letter;
+            }, 100 * i)
+    })
+}
+
+const title = document.querySelector('.typing');
+
+activateLetters(title);
+}
+
+writingLetters();
